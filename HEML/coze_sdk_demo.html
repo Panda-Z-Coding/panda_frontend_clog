@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coze Web SDK 示例</title>
+    <!-- 引入Coze Web SDK -->
+</head>
+<body>
+    <!-- 这是一个空白的HTML页面，但已集成Coze Web SDK功能 -->
+    <h1>我的Coze集成页面</h1>
+    <p>这个页面已准备好使用Coze Web SDK功能</p>
+    
+    <!-- Coze聊天窗口的容器 -->
+    <!-- <div id="coze-chat-widget"></div> -->
+
+
+<script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/cn/index.js"></script>
+<script>
+  new CozeWebSDK.WebChatClient({
+    config: {
+      bot_id: '7503108659334037544',
+    },
+    componentProps: {
+      title: 'Coze测试',
+    },
+    auth: {
+      type: 'token',
+      token: 'pat_TJVhQpqEfG63dLNVaxCzB04epnzzCXnQ3tFUB7Dbgw1jOJyvrZgfNiqRuDrUKjXP',
+      onRefreshToken: function () {
+        return 'pat_TJVhQpqEfG63dLNVaxCzB04epnzzCXnQ3tFUB7Dbgw1jOJyvrZgfNiqRuDrUKjXP'
+      }
+    }
+  });
+</script>
+
+</script>
+
+</body>
+</html>

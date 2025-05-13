@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS的基础语法</title>
+</head>
+<body>
+    <p>JS中的变量和常量定义</p>
+    <script>
+        var x; /*具有函数作用域*/
+        let y = 6; // 具有块级作用域
+        const pi = 3.14; 
+        console.log(x, y, pi);
+        
+        let name = 'lcz'; 
+        let empty_value = null;
+        console.log(name);
+        console.log(empty_value);
+
+    </script>
+
+    <p>JS中的控制语句和循环语句和java一模一样</p>
+    <script>
+        for (let index = 1; index <= 10; index++) {
+            if (index == 2){
+                continue
+            } 
+            if (index == 4) {
+                break
+            }
+            console.log(index);
+        }
+        console.log('while 循环');
+        
+        let count = 1;
+        while (count <= 10){
+            console.log(count);
+            count++;
+        }
+    </script>
+</body>
+</html>
